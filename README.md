@@ -4,7 +4,7 @@ wspocztapolska
 Client of Poczta Polska registered parcels tracking WS as described at:
 http://www.poczta-polska.pl/webservices/
 
-Main class WSPoczta.
+Main class WSPoczta. Using ksoap2-android.
 
 Public methods:
 * public Komunikat getPrzesylka(String code)
