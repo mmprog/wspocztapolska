@@ -12,3 +12,8 @@ Public methods:
 
 getPrzesylkaEx - return also detailed description of post office for event in Jednoska::daneSzczegolowe. For getPrzesylka field daneSzczegolowe is set to null.
  
+----------------------------------------
+
+Klient usługi webservice do śledzenia przesyłek rejestrowanych Poczta Polska dla klientów indywidualnych.
+
+Biblioteczka przeznaczona dla systemu Android, wykonana z użyciem biblioteki ksoap2-android.
