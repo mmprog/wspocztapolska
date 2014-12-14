@@ -108,7 +108,6 @@ public class WSPoczta {
 		return response.getKomunikat();
 	}
 
-	//00359007734230549658
 	public Komunikat getPrzesylka(String code) 
 			throws HttpResponseException, IOException, XmlPullParserException{
 		return getWSResponse(code, SOAP_ACTION, METHOD_NAME, RESPONSE_OUTER_BOX);
