@@ -19,8 +19,8 @@ Klient usługi webservice do śledzenia przesyłek rejestrowanych Poczta Polska 
 Biblioteczka przeznaczona dla systemu Android, wykonana z użyciem biblioteki ksoap2-android.
 
 ----------------------------------------
-Licencja
-========
+Licence
+=======
 
    Copyright 2014 Marcin Milczarz MMPROGRAMIST
 
