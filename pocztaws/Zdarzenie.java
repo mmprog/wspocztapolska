@@ -51,7 +51,7 @@ public class Zdarzenie implements KvmSerializable{
 		case 0: czas=(Date)arg1; break;
 		case 1: jednostka=(Jednostka)arg1; break;
 		case 2: kod=(String)arg1; break;
-		case 3: konczace=(boolean)arg1; break;
+		case 3: konczace=((Boolean)arg1).booleanValue(); break;
 		case 4: nazwa=(String)arg1; break;
 		case 5: przyczyna=(String)arg1; break;
 		}

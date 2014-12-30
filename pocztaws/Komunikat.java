@@ -23,7 +23,7 @@ public class Komunikat implements KvmSerializable{
 	@Override
 	public Object getProperty(int arg0) {
 		switch(arg0){
-		case 0: return new Integer(status);
+		case 0: return Integer.valueOf(status);
 		case 1: return numer;
 		case 2: return danePrzesylki;
 		}
@@ -47,9 +47,9 @@ public class Komunikat implements KvmSerializable{
 	@Override
 	public void setProperty(int arg0, Object arg1) {
 		switch(arg0){
-		case 0: status=(int)arg1;break;
+		case 0: status=((Integer)arg1).intValue();break;
 		case 1: numer=(String)arg1;break;
-		case 2: danePrzesylki=(DanePrzesylki)arg1;break;//((Integer)arg1).intValue();
+		case 2: danePrzesylki=(DanePrzesylki)arg1;break;
 		}
 	}
 

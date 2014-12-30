@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Date;
 
 import org.ksoap2.SoapEnvelope;
-import org.ksoap2.serialization.MarshalDate;
 import org.ksoap2.serialization.PropertyInfo;
 import org.ksoap2.serialization.SoapObject;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
@@ -65,7 +64,6 @@ public class WSPoczta {
 	    
 	    //primitives mapping
 	    MarshalDateCustom marshalDateCust=new MarshalDateCustom();
-	    MarshalDate md=new MarshalDate();
 	    MarshalDouble marshalDouble=new MarshalDouble();
 	    
 	    //what we dealing with here is the total lack of respect for the law

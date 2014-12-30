@@ -80,7 +80,7 @@ public class DanePrzesylki implements KvmSerializable {
 		case 8: rodzPrzes=(String)arg1;break;
 		case 9: urzadNadania=(Jednostka)arg1;break;
 		case 10: urzadPrzezn=(Jednostka)arg1;break;
-		case 11: zakonczonoObsluge=(boolean)arg1;break;
+		case 11: zakonczonoObsluge=((Boolean)arg1).booleanValue();break;
 		case 12: zdarzenia=(Vector<Zdarzenie>)arg1;break;
 		}
 	}
