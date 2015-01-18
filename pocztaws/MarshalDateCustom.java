@@ -3,12 +3,8 @@ package pocztaws;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-import java.util.TimeZone;
-
-import org.kobjects.isodate.IsoDate;
 import org.ksoap2.serialization.Marshal;
 import org.ksoap2.serialization.PropertyInfo;
 import org.ksoap2.serialization.SoapSerializationEnvelope;

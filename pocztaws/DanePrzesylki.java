@@ -75,7 +75,7 @@ public class DanePrzesylki implements KvmSerializable {
 		case 3: kodRodzPrzes=(String)arg1;break;
 		case 4: krajNadania=(String)arg1;break;
 		case 5: krajPrzezn=(String)arg1;break;
-		case 6: masa=(Double)arg1;break;
+		case 6: masa=(arg1!=null?(Double)arg1:0.0d);break;
 		case 7: numer=(String)arg1;break;
 		case 8: rodzPrzes=(String)arg1;break;
 		case 9: urzadNadania=(Jednostka)arg1;break;
@@ -173,7 +173,7 @@ public class DanePrzesylki implements KvmSerializable {
 		this.urzadPrzezn = urzadPrzezn;
 	}
 
-	public boolean isZakonczonoObsluge() {
+	public boolean getZakonczonoObsluge() {
 		return zakonczonoObsluge;
 	}
 

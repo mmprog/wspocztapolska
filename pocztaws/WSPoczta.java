@@ -11,6 +11,7 @@ import org.ksoap2.transport.HttpResponseException;
 import org.ksoap2.transport.HttpTransportSE;
 import org.kxml2.kdom.Element;
 import org.kxml2.kdom.Node;
+
 import org.xmlpull.v1.XmlPullParserException;
 
 public class WSPoczta {
@@ -61,6 +62,7 @@ public class WSPoczta {
 	    envelope.addMapping(AX21, "ListaZdarzen", PropertyInfo.VECTOR_CLASS);
 	    envelope.addMapping(AX21, "Jednostka", Jednostka.class);
 	    envelope.addMapping(AX21, "Zdarzenie", Zdarzenie.class);
+	    envelope.addMapping(AX21, "Przyczyna", Przyczyna.class);
 	    
 	    //primitives mapping
 	    MarshalDateCustom marshalDateCust=new MarshalDateCustom();
@@ -99,8 +101,12 @@ public class WSPoczta {
 	    
 	    //WS call
 	    HttpTransportSE transport = new HttpTransportSE(URL);
-//    	transport.debug = true;
+    	transport.debug = true;
+//    	try{
     	transport.call(soapAction, envelope);
+//    	}catch(Exception e){
+//    		e.printStackTrace();
+//    	}
 	        
         WSResponse response = (WSResponse) envelope.bodyIn;
 		return response.getKomunikat();

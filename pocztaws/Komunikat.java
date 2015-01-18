@@ -4,7 +4,6 @@ import java.util.Hashtable;
 
 import org.ksoap2.serialization.KvmSerializable;
 import org.ksoap2.serialization.PropertyInfo;
-import org.ksoap2.serialization.SoapObject;
 
 public class Komunikat implements KvmSerializable{
 	private int status;	

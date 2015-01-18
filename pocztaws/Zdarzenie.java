@@ -13,7 +13,7 @@ public class Zdarzenie implements KvmSerializable{
 	private String kod;
 	private boolean konczace;
 	private String nazwa;
-	private String przyczyna;
+	private Przyczyna przyczyna;
 	
 	@Override
 	public Object getProperty(int arg0) {
@@ -41,7 +41,7 @@ public class Zdarzenie implements KvmSerializable{
 		case 2: arg2.name="kod"; arg2.type=PropertyInfo.STRING_CLASS; break;
 		case 3: arg2.name="konczace"; arg2.type=PropertyInfo.BOOLEAN_CLASS; break;
 		case 4: arg2.name="nazwa"; arg2.type=PropertyInfo.STRING_CLASS; break;
-		case 5: arg2.name="przyczyna"; arg2.type=PropertyInfo.STRING_CLASS; break;
+		case 5: arg2.name="przyczyna"; arg2.type=Przyczyna.class; break;
 		}
 	}
 
@@ -53,7 +53,7 @@ public class Zdarzenie implements KvmSerializable{
 		case 2: kod=(String)arg1; break;
 		case 3: konczace=((Boolean)arg1).booleanValue(); break;
 		case 4: nazwa=(String)arg1; break;
-		case 5: przyczyna=(String)arg1; break;
+		case 5: przyczyna=(Przyczyna)arg1; break;
 		}
 	}
 
@@ -81,7 +81,7 @@ public class Zdarzenie implements KvmSerializable{
 		this.kod = kod;
 	}
 
-	public boolean isKonczace() {
+	public boolean getKonczace() {
 		return konczace;
 	}
 
@@ -97,11 +97,11 @@ public class Zdarzenie implements KvmSerializable{
 		this.nazwa = nazwa;
 	}
 
-	public String getPrzyczyna() {
+	public Przyczyna getPrzyczyna() {
 		return przyczyna;
 	}
 
-	public void setPrzyczyna(String przyczyna) {
+	public void setPrzyczyna(Przyczyna przyczyna) {
 		this.przyczyna = przyczyna;
 	}
 
